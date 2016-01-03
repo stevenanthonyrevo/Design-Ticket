@@ -1,0 +1,93 @@
+<template name="home">
+ <!--  <h1>home page Kitchen Sink</h1> -->
+
+<!--   {{> anime}}  -->
+<!--   {{> list}} -->
+  {{>	leaderboard}}
+  	<div id="output"></div>
+  <div class="sidebar">
+<!--   		 <div class="timer">
+  			<div><h3>00:00:00</h3></div>
+  		{{> counter}}</div>
+ -->
+  {{> submitter}}
+  </div>	
+  <div class="pageoff">
+  <div class="container">{{> people}}</div>
+  </div>
+
+  
+</template>
+
+<!--ADDED LIST TEMPLATE SO A HELPER CAN FIND IT INSTEAD BODY -->
+<template name="list">
+	<div class="container">
+		
+		<ul>
+	      {{#each tasks}} 
+	        {{> task}} 
+	      {{/each}}
+	    </ul>
+	</div>
+</template>
+
+<template name="task">
+	<li>{{text}}</li>
+</template>
+<!-- THE ABOVER TASK TEMPLATE IS ALSO INSIDE THE LIST TEMPLATE -->
+
+
+<template name="people2">
+	<!-- <h2>Offline Projects</h2> -->
+	   {{#each OldClients}}
+	   	   <button class="deleteMe">delete</button>
+	   	   <!-- <button class="test">test</button> -->
+	       <ul class=" player Oldclient {{selectedClass}}">
+	       	<li><h1 class="tagheader">{{name}}</h1></li>
+	       	<li><p>{{description}}</p></li>
+	        <li><h6 class="tagcaption">{{type}}</h6></li>  
+	       </ul>
+	      {{/each}}
+	<!-- {{CurrentClients}} -->
+	<!-- {{OldClients}} -->
+</template>
+<template name="people">
+		
+	   	{{#each CurrentClients}}	
+	   	
+	   <button class="client">-</button>
+
+	    <ul class=" player readme {{selectedClass}}">
+	       	<li><h1 class="tagheader">{{name}}</h1></li>
+	       	<li><p>{{description}}</p></li>
+	        <li><h6 class="tagcaption">{{type}}</h6></li>  
+	    </ul>
+	    <div id="1"></div>
+
+	      {{/each}}	
+</template>
+
+
+
+<template name="counter">
+
+<button class="count" id="start">start</button>
+<button class="stop" id="stop">stop</button>
+
+</template>
+
+
+ <template name="leaderboard">
+</template> 
+
+<template name="submitter">
+ <form class="new-task">
+       	<div class="name"><input type="text" id="submitter" name="text" placeholder="Project name" /></div> 
+       	<br>
+       	<div class="type"><input type="typetext" id="submitter" name="typetext" placeholder="Project type" /></div>
+       	<br>
+       	<div class="desc"><textarea type="desctext" id="descp" name="desctext" placeholder="Description"></textarea></div>
+   		<br>
+        <button type="submit">submit</button>
+ </form>
+</template>

@@ -1,0 +1,218 @@
+/* CSS declarations go here */
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,300italic);
+
+/*----CLEAR ALL-----*/
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+/*----FONTS-----*/
+
+
+body {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 1em;
+	font-weight: lighter;
+}
+h1 {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 2em;
+	font-weight: normal;
+}
+
+h6 {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 0.67em;
+	color: #9f9f9f;
+	font-weight: lighter;
+}
+p {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 1em;
+	font-weight: lighter;
+
+}
+
+
+.selected{
+	border-bottom: solid 4px #41a4ff !important;
+	/*background-color: #41a4ff !important;*/
+
+}
+
+
+
+/*----LAYOUT-------*/
+.container {
+	padding-left: 20px;
+	padding-top: 0px;
+	padding-bottom: 20px;
+	background-color: #f4f4f8;
+	/*width: 79%;
+	min-height: 705px;
+	max-height: 102%;*/
+}
+.pageoff {
+	padding-top: 10px;
+	padding-bottom: 20px;
+	margin-left: 300px;	
+	height: 730px;
+	background-color: #f4f4f8;
+}
+.sidebar {
+	width: 300px;
+	float: left;
+	margin-bottom: 60px;
+	position: absolute;
+	margin-top: 20px;
+	height: 600px;
+	padding-left: 20px;
+}
+#descp {
+	min-width: 240px;
+	min-height: 240px;
+	max-width: 240px;
+	max-height: 500px;
+	height: 25px;
+	padding: 5px 10px;
+	margin-top: 20px;
+	font-size: 12px;
+	line-height: 1.5;
+	border-radius: 3px !important;
+	border-color: #F4F4F8; 
+}	
+.navi {
+	padding-top: 0px;
+	padding-left: 314px;
+	height: 58px;
+	font-family: 'Ubuntu', sans-serif;
+}
+.nav {
+	background-color: #5BD9FF;
+	width: 100%;
+}
+.client {
+	margin-left: 60%;
+	margin-top: 30px;
+	position: absolute;	
+}
+
+
+
+a {
+	text-decoration: none;
+}
+
+
+
+/*----ONLINE/OFFLINE - BUTTONS-----*/
+
+#buttonActive {
+	padding-right: 40px;
+	padding-left: 40px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: white;
+	text-decoration: none;
+	margin-left: -14px;	
+}
+
+#buttonDeactive {
+	padding-right: 40px;
+	padding-left: 40px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: white;
+	text-decoration: none;	
+	margin-left: -4px;
+}
+
+.buttonController {
+
+}
+
+#buttonsider {
+	display: inline-block;
+	margin-top: 20px;
+}
+
+#buttonsider li {
+	list-style-type: none;
+}
+
+button {
+    padding-right: 10px;
+	padding-left: 10px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+    border-bottom: 3px solid #a3d50d;
+    border-radius: 2px;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    background-color: #b6e42a;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #c7f831;
+}
+
+.player {
+	list-style-type: none;
+	padding: 24px;
+	background-color: white;
+	border-bottom: solid 4px #b6e42a;
+	margin-bottom: 8px;
+	margin-top: 11px;	
+	max-width: 80%;
+}
+
+.deleteMe {
+	margin-top: 30px;
+	margin-left: 60%;
+	position: absolute;
+	background-color: #41a4ff;
+	border-color: #358dde;
+}
+.deleteMe:hover {
+	background-color: #1fcefe;
+}
+#submitter {
+	height: 25px;
+	padding: 5px 10px;
+	margin-top: 20px;
+	font-size: 12px;
+	width: 242px;
+	line-height: 1.5;
+	border-radius: 3px !important;
+	border-color: #F4F4F8;
+}
+
+
+input {
+    padding: 4px;
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+    border: 1px solid #F4F4F8;
+}
+.tagheader {
+	padding-bottom: 20px;
+}
+.tagcaption {
+	padding-bottom: 20px; 
+	padding-top: 10px;
+	color: #9f9f9f;
+}
+
+
+
+#container {
+   min-height:100%;
+   position:relative;
+}
